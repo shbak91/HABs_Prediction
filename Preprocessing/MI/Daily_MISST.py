@@ -1,17 +1,9 @@
 
 # coding: utf-8
-
-# In[1]:
-
-
 import h5py
 import numpy as np
 import glob
 import os
-
-
-# In[2]:
-
 
 # 환경변수 설정
 HOME_DIR = '/home/marinersgis/Redtide'
@@ -73,12 +65,12 @@ h5mean = np.transpose(h5mean)
 # 통영-거제 해역 Target Point 추출
 for i in range(XY_TYGJ.shape[0]):
     
-    Output_TYGJ[:, 2] = h5mean[int(XY_TYGJ[i, 2]), int(XY_TYGJ[i, 3])]
+    Output_TYGJ[i, 2] = h5mean[int(XY_TYGJ[i, 2]), int(XY_TYGJ[i, 3])]
     
 # 여수 해역 Target Point 추출
 for i in range(XY_YS.shape[0]):
     
-    Output_YS[:, 2] = h5mean[int(XY_YS[i, 2]), int(XY_YS[i, 3])]
+    Output_YS[i, 2] = h5mean[int(XY_YS[i, 2]), int(XY_YS[i, 3])]
 
 # Export를 위한 폴더 생성
 os.mkdir(RESULT_DIR + '/' + RESULT_DATE + '/')
