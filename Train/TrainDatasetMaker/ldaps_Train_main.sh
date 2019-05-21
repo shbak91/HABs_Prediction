@@ -38,5 +38,5 @@ do
     fi
 done
 
-# Data 생산시간 : 약 1분
-sleep 1m
+# Data 생산시간 : 약 10초
+sleep 10s
