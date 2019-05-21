@@ -38,3 +38,5 @@ do
     fi
 done
 
+# Data 생산시간 : 약 1분
+sleep 1m
