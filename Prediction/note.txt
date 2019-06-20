@@ -1,0 +1,1 @@
+Prediction 폴더내에 KOOS AT, OC 파일이 함께 있는 경우 작동
