@@ -62,7 +62,7 @@ for TARGET_DATE in list_DATE:
 
     # KOOS_AT : windu, windv, atemp, solar, rain, lat, lon
     # KOOS_OC : temp
-    AT = netCDF4.Dataset('SS_AT_' + TARGET_DATE + '12_rain.nc')
+    AT = netCDF4.Dataset('SS_AT_' + TARGET_DATE + '12.nc')
     OC = netCDF4.Dataset('SS_OC_' + TARGET_DATE + '12.nc')
 
     # 위치정보
